@@ -27,8 +27,20 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new ArcGISPlugin()
   ],
+  externals: [
+    (context, request, callback) => {
+      if (/pe-wasm$/.test(request)) {
+        return callback(null, "amd " + request);
+      }
+      callback();
+    }
+  ],
   devServer: {
     contentBase: './dist',
     hot: true
+  },
+  node: {
+    process: false,
+    global: false
   }
 };
