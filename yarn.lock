@@ -2,6 +2,43 @@
 # yarn lockfile v1
 
 
+"@arcgis/webpack-plugin@^4.7.0":
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/@arcgis/webpack-plugin/-/webpack-plugin-4.7.0.tgz#e0cd398f61f721e7f7e3219f2e02f531761d2082"
+  dependencies:
+    arcgis-js-api "4.7.0"
+    copy-webpack-plugin "^4.1.1"
+    dojo-webpack-plugin "^2.7.2"
+    file-loader "^1.1.11"
+    umd-compat-loader "^2.1.1"
+    url-loader "^1.0.1"
+
+"@dojo/core@~0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@dojo/core/-/core-0.5.0.tgz#47676f37a3045d0a598704c8f344932ad833d121"
+  dependencies:
+    tslib "~1.8.1"
+
+"@dojo/has@~0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@dojo/has/-/has-0.1.2.tgz#26d125256d716bd0037328e2eaa94cd5b09857ec"
+
+"@dojo/i18n@~0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@dojo/i18n/-/i18n-0.6.0.tgz#30731c5991ce91c90910856b6d48377b56a74a61"
+  dependencies:
+    globalize "1.3.0"
+    tslib "~1.8.1"
+
+"@dojo/shim@~0.2.7":
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/@dojo/shim/-/shim-0.2.7.tgz#e5f45543d3887afcf2c1b118522353e398e10d3e"
+  dependencies:
+    intersection-observer "0.4.2"
+    pepjs "0.4.2"
+    tslib "~1.8.0"
+    web-animations-js "2.3.1"
+
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
@@ -89,6 +126,25 @@ aproba@^1.0.3, aproba@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/aproba/-/aproba-1.2.0.tgz#6802e6264efd18c790a1b0d517f0f2627bf2c94a"
 
+arcgis-js-api@4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/arcgis-js-api/-/arcgis-js-api-4.7.0.tgz#f4e1052b902fcd925f2f156fcc31824ab0d4a85d"
+  dependencies:
+    "@dojo/core" "~0.5.0"
+    "@dojo/has" "~0.1.2"
+    "@dojo/i18n" "~0.6.0"
+    "@dojo/shim" "~0.2.7"
+    dgrid Esri/dgrid#v1.2.1/esri-3.22.0
+    dijit Esri/dijit#v1.13.0/esri-3.23.0
+    dojo Esri/dojo#v1.13.0/esri-3.24.0
+    dojo-dstore "^1.1.2"
+    dojo-util "^1.13.0"
+    dojox Esri/dojox#v1.13.0/esri-3.23.0
+    maquette "~3.2.1"
+    maquette-css-transitions "~1.1.0"
+    maquette-jsx "~2.1.1"
+    moment "2.20.1"
+
 are-we-there-yet@~1.1.2:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/are-we-there-yet/-/are-we-there-yet-1.1.4.tgz#bb5dca382bb94f05e15194373d16fd3ba1ca110d"
@@ -155,7 +211,7 @@ array-unique@^0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/array-unique/-/array-unique-0.3.2.tgz#a894b75d4bc4f6cd679ef3244a9fd8f46ae2d428"
 
-arrify@^1.0.0:
+arrify@^1.0.0, arrify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
 
@@ -188,6 +244,14 @@ ast-types@0.10.1:
 ast-types@0.11.3:
   version "0.11.3"
   resolved "https://registry.yarnpkg.com/ast-types/-/ast-types-0.11.3.tgz#c20757fe72ee71278ea0ff3d87e5c2ca30d9edf8"
+
+ast-types@0.9.6:
+  version "0.9.6"
+  resolved "https://registry.yarnpkg.com/ast-types/-/ast-types-0.9.6.tgz#102c9e9e9005d3e7e3829bf0c4fa24ee862ee9b9"
+
+ast-types@^0.9.2:
+  version "0.9.14"
+  resolved "https://registry.yarnpkg.com/ast-types/-/ast-types-0.9.14.tgz#d34ba5dffb9d15a44351fd2a9d82e4ab2838b5ba"
 
 async-each@^1.0.0:
   version "1.0.1"
@@ -1225,6 +1289,10 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+cldrjs@^0.4.6:
+  version "0.4.8"
+  resolved "https://registry.yarnpkg.com/cldrjs/-/cldrjs-0.4.8.tgz#3b994c464d2a32b5aca7c5de17a60a87e45dc4f9"
+
 cli-cursor@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/cli-cursor/-/cli-cursor-1.0.2.tgz#64da3f7d56a54412e59794bd62dc35295e8f2987"
@@ -1424,6 +1492,19 @@ copy-concurrently@^1.0.0:
 copy-descriptor@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
+
+copy-webpack-plugin@^4.1.1:
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/copy-webpack-plugin/-/copy-webpack-plugin-4.5.1.tgz#fc4f68f4add837cc5e13d111b20715793225d29c"
+  dependencies:
+    cacache "^10.0.4"
+    find-cache-dir "^1.0.0"
+    globby "^7.1.1"
+    is-glob "^4.0.0"
+    loader-utils "^1.1.0"
+    minimatch "^3.0.4"
+    p-limit "^1.0.0"
+    serialize-javascript "^1.4.0"
 
 core-js@^1.0.0:
   version "1.2.7"
@@ -1637,6 +1718,10 @@ detect-node@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/detect-node/-/detect-node-2.0.3.tgz#a2033c09cc8e158d37748fbde7507832bd6ce127"
 
+"dgrid@github:Esri/dgrid#v1.2.1/esri-3.22.0":
+  version "1.2.1"
+  resolved "https://codeload.github.com/Esri/dgrid/tar.gz/200a7fda418bec199f3b76a493fdfa7d4440698b"
+
 diff@^3.3.1, diff@^3.5.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/diff/-/diff-3.5.0.tgz#800c0dd1e0a8bfbc95835c202ad220fe317e5a12"
@@ -1648,6 +1733,19 @@ diffie-hellman@^5.0.0:
     bn.js "^4.1.0"
     miller-rabin "^4.0.0"
     randombytes "^2.0.0"
+
+dijit@1.13.0, "dijit@github:Esri/dijit#v1.13.0/esri-3.23.0":
+  version "1.13.0"
+  resolved "https://codeload.github.com/Esri/dijit/tar.gz/32737ca61c0844140fc27f5be1e968398790185a"
+  dependencies:
+    dojo "1.13.0"
+
+dir-glob@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/dir-glob/-/dir-glob-2.0.0.tgz#0b205d2b6aef98238ca286598a8204d29d0a0034"
+  dependencies:
+    arrify "^1.0.1"
+    path-type "^3.0.0"
 
 dns-equal@^1.0.0:
   version "1.0.0"
@@ -1665,6 +1763,41 @@ dns-txt@^2.0.2:
   resolved "https://registry.yarnpkg.com/dns-txt/-/dns-txt-2.0.2.tgz#b91d806f5d27188e4ab3e7d107d881a1cc4642b6"
   dependencies:
     buffer-indexof "^1.0.0"
+
+dojo-dstore@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/dojo-dstore/-/dojo-dstore-1.1.2.tgz#cee36999f3f807d1cffcfdf6157db0f2b237cde4"
+  dependencies:
+    dojo "^1.9.0"
+
+dojo-util@^1.13.0:
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/dojo-util/-/dojo-util-1.13.0.tgz#58e74023d4848e1eedeeaac485337fcaffaed61e"
+
+dojo-webpack-plugin@^2.7.2:
+  version "2.7.2"
+  resolved "https://registry.yarnpkg.com/dojo-webpack-plugin/-/dojo-webpack-plugin-2.7.2.tgz#23f5d18bbc2ebaae29223f485ac7760d5a29bd4b"
+  dependencies:
+    file-loader "0.9.0"
+    loader-utils "1.1.0"
+    node-stringify "0.2.1"
+    raw-loader "0.5.1"
+    tmp "0.0.30"
+
+dojo@1.13.0, dojo@^1.9.0:
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/dojo/-/dojo-1.13.0.tgz#62a7c53628f4f7acfa791a96924c67f39cd5861b"
+
+"dojo@github:Esri/dojo#v1.13.0/esri-3.24.0":
+  version "1.13.0"
+  resolved "https://codeload.github.com/Esri/dojo/tar.gz/3774881b7a71cfc8f4b406441050301c08020487"
+
+"dojox@github:Esri/dojox#v1.13.0/esri-3.23.0":
+  version "1.13.0"
+  resolved "https://codeload.github.com/Esri/dojox/tar.gz/4399bdc83503acdeac808ee9afd03a4a57d2d4c1"
+  dependencies:
+    dijit "1.13.0"
+    dojo "1.13.0"
 
 dom-walk@^0.1.0:
   version "0.1.1"
@@ -1802,6 +1935,10 @@ eslint-scope@^3.7.1:
   dependencies:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
+
+esprima@~3.1.0:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/esprima/-/esprima-3.1.3.tgz#fdca51cee6133895e3c88d535ce49dbff62a4633"
 
 esprima@~4.0.0:
   version "4.0.0"
@@ -2015,6 +2152,19 @@ figures@^2.0.0:
   resolved "https://registry.yarnpkg.com/figures/-/figures-2.0.0.tgz#3ab1a2d2a62c8bfb431a0c94cb797a2fce27c962"
   dependencies:
     escape-string-regexp "^1.0.5"
+
+file-loader@0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/file-loader/-/file-loader-0.9.0.tgz#1d2daddd424ce6d1b07cfe3f79731bed3617ab42"
+  dependencies:
+    loader-utils "~0.2.5"
+
+file-loader@^1.1.11:
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/file-loader/-/file-loader-1.1.11.tgz#6fe886449b0f2a936e43cabaac0cdbfb369506f8"
+  dependencies:
+    loader-utils "^1.0.2"
+    schema-utils "^0.4.5"
 
 filename-regex@^2.0.0:
   version "2.0.1"
@@ -2265,6 +2415,12 @@ global@^4.3.0:
     min-document "^2.19.0"
     process "~0.5.1"
 
+globalize@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/globalize/-/globalize-1.3.0.tgz#c56524b8acfd2ce38d0c97ddfdceb38f644b3392"
+  dependencies:
+    cldrjs "^0.4.6"
+
 globals@^9.18.0:
   version "9.18.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-9.18.0.tgz#aa3896b3e69b487f17e31ed2143d69a8e30c2d8a"
@@ -2278,6 +2434,17 @@ globby@^6.1.0:
     object-assign "^4.0.1"
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
+
+globby@^7.1.1:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/globby/-/globby-7.1.1.tgz#fb2ccff9401f8600945dfada97440cca972b8680"
+  dependencies:
+    array-union "^1.0.1"
+    dir-glob "^2.0.0"
+    glob "^7.1.2"
+    ignore "^3.3.5"
+    pify "^3.0.0"
+    slash "^1.0.0"
 
 got@^7.0.0:
   version "7.1.0"
@@ -2526,6 +2693,10 @@ ignore-walk@^3.0.1:
   dependencies:
     minimatch "^3.0.4"
 
+ignore@^3.3.5:
+  version "3.3.7"
+  resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.7.tgz#612289bfb3c220e186a58118618d5be8c1bab021"
+
 import-local@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/import-local/-/import-local-1.0.0.tgz#5e4ffdc03f4fe6c009c6729beb29631c2f8227bc"
@@ -2616,6 +2787,10 @@ internal-ip@1.2.0:
 interpret@^1.0.0, interpret@^1.0.4:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.1.0.tgz#7ed1b1410c6a0e0f78cf95d3b8440c63f78b8614"
+
+intersection-observer@0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/intersection-observer/-/intersection-observer-0.4.2.tgz#24100ed620baf6a427072996d4d73366e9ec93ef"
 
 into-stream@^3.1.0:
   version "3.1.0"
@@ -3097,13 +3272,22 @@ loader-runner@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/loader-runner/-/loader-runner-2.3.0.tgz#f482aea82d543e07921700d5a46ef26fdac6b8a2"
 
-loader-utils@^1.0.2, loader-utils@^1.1.0:
+loader-utils@1.1.0, loader-utils@^1.0.2, loader-utils@^1.0.3, loader-utils@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-1.1.0.tgz#c98aef488bcceda2ffb5e2de646d6a754429f5cd"
   dependencies:
     big.js "^3.1.3"
     emojis-list "^2.0.0"
     json5 "^0.5.0"
+
+loader-utils@~0.2.5:
+  version "0.2.17"
+  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-0.2.17.tgz#f86e6374d43205a6e6c60e9196f17c0299bfb348"
+  dependencies:
+    big.js "^3.1.3"
+    emojis-list "^2.0.0"
+    json5 "^0.5.0"
+    object-assign "^4.0.1"
 
 locate-path@^2.0.0:
   version "2.0.0"
@@ -3190,6 +3374,18 @@ map-visit@^1.0.0:
   resolved "https://registry.yarnpkg.com/map-visit/-/map-visit-1.0.0.tgz#ecdca8f13144e660f1b5bd41f12f3479d98dfb8f"
   dependencies:
     object-visit "^1.0.0"
+
+maquette-css-transitions@~1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/maquette-css-transitions/-/maquette-css-transitions-1.1.0.tgz#b990b3efbe589954e243c7e92e4983591012e33d"
+
+maquette-jsx@~2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/maquette-jsx/-/maquette-jsx-2.1.1.tgz#fc974c102f6430ad99f695890d05ddefe856a237"
+
+maquette@~3.2.1:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/maquette/-/maquette-3.2.2.tgz#a953b15a0db8df4a63f83933c85270d164de512c"
 
 md5.js@^1.3.4:
   version "1.3.4"
@@ -3318,7 +3514,7 @@ mime@1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.4.1.tgz#121f9ebc49e3766f311a76e1fa1c8003c4b03aa6"
 
-mime@^2.1.0:
+mime@^2.0.3, mime@^2.1.0:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/mime/-/mime-2.3.1.tgz#b1621c54d63b97c47d3cfe7f7215f7d64517c369"
 
@@ -3402,6 +3598,10 @@ mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
     minimist "0.0.8"
+
+moment@2.20.1:
+  version "2.20.1"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.20.1.tgz#d6eb1a46cbcc14a2b2f9434112c1ff8907f313fd"
 
 move-concurrently@^1.0.1:
   version "1.0.1"
@@ -3540,6 +3740,10 @@ node-pre-gyp@^0.9.0:
     rimraf "^2.6.1"
     semver "^5.3.0"
     tar "^4"
+
+node-stringify@0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/node-stringify/-/node-stringify-0.2.1.tgz#aee4addb89702861c004b6848ec22fbc0b01f46e"
 
 nomnom@^1.8.1:
   version "1.8.1"
@@ -3710,7 +3914,7 @@ os-locale@^2.0.0:
     lcid "^1.0.0"
     mem "^1.1.0"
 
-os-tmpdir@^1.0.0, os-tmpdir@^1.0.1, os-tmpdir@~1.0.2:
+os-tmpdir@^1.0.0, os-tmpdir@^1.0.1, os-tmpdir@~1.0.1, os-tmpdir@~1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/os-tmpdir/-/os-tmpdir-1.0.2.tgz#bbe67406c79aa85c5cfec766fe5734555dfa1274"
 
@@ -3747,7 +3951,7 @@ p-lazy@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-lazy/-/p-lazy-1.0.0.tgz#ec53c802f2ee3ac28f166cc82d0b2b02de27a835"
 
-p-limit@^1.1.0:
+p-limit@^1.0.0, p-limit@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/p-limit/-/p-limit-1.2.0.tgz#0e92b6bedcb59f022c13d0f1949dc82d15909f1c"
   dependencies:
@@ -3900,6 +4104,10 @@ pbkdf2@^3.0.3:
     ripemd160 "^2.0.1"
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
+
+pepjs@0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/pepjs/-/pepjs-0.4.2.tgz#13264eea894984ff423c83e40d2fa4e1dec1c9fa"
 
 pify@^2.0.0, pify@^2.3.0:
   version "2.3.0"
@@ -4104,6 +4312,10 @@ raw-body@2.3.2:
     iconv-lite "0.4.19"
     unpipe "1.0.0"
 
+raw-loader@0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-0.5.1.tgz#0c3d0beaed8a01c966d9787bf778281252a979aa"
+
 rc@^1.1.7:
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/rc/-/rc-1.2.6.tgz#eb18989c6d4f4f162c399f79ddd29f3835568092"
@@ -4203,6 +4415,15 @@ readdirp@^2.0.0:
     minimatch "^3.0.2"
     readable-stream "^2.0.2"
     set-immediate-shim "^1.0.1"
+
+recast@^0.11.17:
+  version "0.11.23"
+  resolved "https://registry.yarnpkg.com/recast/-/recast-0.11.23.tgz#451fd3004ab1e4df9b4e4b66376b2a21912462d3"
+  dependencies:
+    ast-types "0.9.6"
+    esprima "~3.1.0"
+    private "~0.1.5"
+    source-map "~0.5.0"
 
 recast@^0.12.5:
   version "0.12.9"
@@ -4435,7 +4656,7 @@ sax@^1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
 
-schema-utils@^0.4.4, schema-utils@^0.4.5:
+schema-utils@^0.4.3, schema-utils@^0.4.4, schema-utils@^0.4.5:
   version "0.4.5"
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-0.4.5.tgz#21836f0608aac17b78f9e3e24daff14a5ca13a3e"
   dependencies:
@@ -4661,7 +4882,7 @@ source-map-url@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/source-map-url/-/source-map-url-0.4.0.tgz#3e935d7ddd73631b97659956d55128e87b5084a3"
 
-source-map@^0.5.6, source-map@^0.5.7:
+source-map@^0.5.6, source-map@^0.5.7, source-map@~0.5.0:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
 
@@ -4925,6 +5146,12 @@ timers-browserify@^2.0.4:
   dependencies:
     setimmediate "^1.0.4"
 
+tmp@0.0.30:
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.0.30.tgz#72419d4a8be7d6ce75148fd8b324e593a711c2ed"
+  dependencies:
+    os-tmpdir "~1.0.1"
+
 tmp@^0.0.33:
   version "0.0.33"
   resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.0.33.tgz#6d34335889768d21b2bcda0aa277ced3b1bfadf9"
@@ -4969,6 +5196,10 @@ trim-right@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
 
+tslib@~1.8.0, tslib@~1.8.1:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.8.1.tgz#6946af2d1d651a7b1863b531d6e5afa41aa44eac"
+
 tty-browserify@0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/tty-browserify/-/tty-browserify-0.0.0.tgz#a157ba402da24e9bf957f9aa69d524eed42901a6"
@@ -5007,6 +5238,14 @@ uglifyjs-webpack-plugin@^1.2.4:
     uglify-es "^3.3.4"
     webpack-sources "^1.1.0"
     worker-farm "^1.5.2"
+
+umd-compat-loader@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/umd-compat-loader/-/umd-compat-loader-2.1.1.tgz#1a44674f57deeb429f4d1533668453a3cf322422"
+  dependencies:
+    ast-types "^0.9.2"
+    loader-utils "^1.0.3"
+    recast "^0.11.17"
 
 underscore@~1.6.0:
   version "1.6.0"
@@ -5065,6 +5304,14 @@ urix@^0.1.0:
 url-join@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/url-join/-/url-join-4.0.0.tgz#4d3340e807d3773bda9991f8305acdcc2a665d2a"
+
+url-loader@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/url-loader/-/url-loader-1.0.1.tgz#61bc53f1f184d7343da2728a1289ef8722ea45ee"
+  dependencies:
+    loader-utils "^1.1.0"
+    mime "^2.0.3"
+    schema-utils "^0.4.3"
 
 url-parse-lax@^1.0.0:
   version "1.0.0"
@@ -5191,6 +5438,10 @@ wbuf@^1.1.0, wbuf@^1.7.2:
   resolved "https://registry.yarnpkg.com/wbuf/-/wbuf-1.7.3.tgz#c1d8d149316d3ea852848895cb6a0bfe887b87df"
   dependencies:
     minimalistic-assert "^1.0.0"
+
+web-animations-js@2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/web-animations-js/-/web-animations-js-2.3.1.tgz#3a6d9bc15196377a90f8e2803fa5262165b04510"
 
 webpack-addons@^1.1.5:
   version "1.1.5"

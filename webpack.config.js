@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const ArcGISPlugin = require("@arcgis/webpack-plugin");
 
 module.exports = {
   entry: [
@@ -23,7 +24,8 @@ module.exports = {
     filename: 'bundle.js'
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new ArcGISPlugin()
   ],
   devServer: {
     contentBase: './dist',
