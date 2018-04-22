@@ -1,11 +1,11 @@
-import React, { Component, Fragment } from 'react';
-import EsriMap from 'esri/Map';
-import MapView from './MapView';
+import React, { Component, Fragment } from "react";
+import EsriMap from "esri/Map";
+import MapView from "./MapView";
 import { hot } from "react-hot-loader";
+import "./App.css";
 // const title = "My Minimal React Webpack Babel Setup";
 
 // const App = () => <div>{title}</div>;
-
 
 const map = new EsriMap({
   basemap: 'streets-vector',
