@@ -32,16 +32,12 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new ArcGISPlugin(),
-    // will copy your index.html file
-    // and inject assets for you
     new HtmlWebpackPlugin({
       template: "./src/index.html",
       filename: "./index.html",
       chunksSortMode: "none"
     }),
     new MiniCssExtractPlugin({
-      // Options similar to the same options in webpackOptions.output
-      // both options are optional
       filename: "[name].css",
       chunkFilename: "[id].css"
     })
