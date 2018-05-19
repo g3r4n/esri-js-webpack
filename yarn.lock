@@ -2,11 +2,11 @@
 # yarn lockfile v1
 
 
-"@arcgis/webpack-plugin@4.7.0":
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/@arcgis/webpack-plugin/-/webpack-plugin-4.7.0.tgz#e0cd398f61f721e7f7e3219f2e02f531761d2082"
+"@arcgis/webpack-plugin@4.7.2":
+  version "4.7.2"
+  resolved "https://registry.yarnpkg.com/@arcgis/webpack-plugin/-/webpack-plugin-4.7.2.tgz#78a552ca1718f3d164825ec3db44911aefa5e2fc"
   dependencies:
-    arcgis-js-api "4.7.0"
+    arcgis-js-api "4.7.1"
     copy-webpack-plugin "^4.1.1"
     dojo-webpack-plugin "^2.7.2"
     file-loader "^1.1.11"
@@ -152,9 +152,9 @@ aproba@^1.0.3, aproba@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/aproba/-/aproba-1.2.0.tgz#6802e6264efd18c790a1b0d517f0f2627bf2c94a"
 
-arcgis-js-api@4.7.0:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/arcgis-js-api/-/arcgis-js-api-4.7.0.tgz#f4e1052b902fcd925f2f156fcc31824ab0d4a85d"
+arcgis-js-api@4.7.1:
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/arcgis-js-api/-/arcgis-js-api-4.7.1.tgz#d962bd442690e2dd58a65e3143bf2c2452e5a316"
   dependencies:
     "@dojo/core" "~0.5.0"
     "@dojo/has" "~0.1.2"
