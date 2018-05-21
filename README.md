@@ -1,8 +1,4 @@
-# minimal-react-webpack-babel-setup
-
-[![Build Status](https://travis-ci.org/rwieruch/minimal-react-webpack-babel-setup.svg?branch=master)](https://travis-ci.org/rwieruch/minimal-react-webpack-babel-setup)
-
-Read more about it: [The Minimal React Webpack Babel Setup](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)
+# esri-js-webpack
 
 ## Features
 
@@ -11,11 +7,24 @@ Read more about it: [The Minimal React Webpack Babel Setup](https://www.robinwie
 * Babel
 * Staging ES Next Features
 * Hot Module Replacement
+* Arcgis JS API webpack plugin
 
 ## Installation
 
-* `git clone git@github.com:rwieruch/minimal-react-webpack-babel-setup.git`
-* cd minimal-react-webpack-babel-setup
-* npm install
-* npm start
-* visit `http://localhost:8080/`
+```
+git clone git@github.com:g3r4n/esri-js-webpack.git
+cd esri-js-webpack
+npm install
+npm start
+```
+visit `http://localhost:8080/`
+
+# build
+```
+npm build
+```
+
+# serve build
+```
+npm serve
+```

@@ -2,18 +2,16 @@
 # yarn lockfile v1
 
 
-"@arcgis/webpack-plugin@^4.7.2":
-  version "4.7.9"
-  resolved "https://registry.yarnpkg.com/@arcgis/webpack-plugin/-/webpack-plugin-4.7.9.tgz#a2c3efe5d7b2800e7b822036c3ba734c310c49f0"
+"@arcgis/webpack-plugin@4.7.2":
+  version "4.7.2"
+  resolved "https://registry.yarnpkg.com/@arcgis/webpack-plugin/-/webpack-plugin-4.7.2.tgz#78a552ca1718f3d164825ec3db44911aefa5e2fc"
   dependencies:
-    arcgis-js-api "4.7.2"
+    arcgis-js-api "4.7.1"
     copy-webpack-plugin "^4.1.1"
     dojo-webpack-plugin "^2.7.2"
     file-loader "^1.1.11"
-    uglify-js "~3.3.25"
     umd-compat-loader "^2.1.1"
     url-loader "^1.0.1"
-    webpack-hasjs-plugin "^1.0.0"
 
 "@dojo/core@~0.5.0":
   version "0.5.0"
@@ -281,9 +279,9 @@ aproba@^1.0.3, aproba@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/aproba/-/aproba-1.2.0.tgz#6802e6264efd18c790a1b0d517f0f2627bf2c94a"
 
-arcgis-js-api@4.7.2:
-  version "4.7.2"
-  resolved "https://registry.yarnpkg.com/arcgis-js-api/-/arcgis-js-api-4.7.2.tgz#3372ff714455e6d384e9ca1a3acd4806723a9f3c"
+arcgis-js-api@4.7.1:
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/arcgis-js-api/-/arcgis-js-api-4.7.1.tgz#d962bd442690e2dd58a65e3143bf2c2452e5a316"
   dependencies:
     "@dojo/core" "~0.5.0"
     "@dojo/has" "~0.1.2"
@@ -2181,7 +2179,7 @@ detect-port@1.2.2:
     address "^1.0.1"
     debug "^2.6.0"
 
-dgrid@Esri/dgrid#v1.2.1/esri-3.22.0:
+"dgrid@github:Esri/dgrid#v1.2.1/esri-3.22.0":
   version "1.2.1"
   resolved "https://codeload.github.com/Esri/dgrid/tar.gz/200a7fda418bec199f3b76a493fdfa7d4440698b"
 
@@ -2197,7 +2195,7 @@ diffie-hellman@^5.0.0:
     miller-rabin "^4.0.0"
     randombytes "^2.0.0"
 
-dijit@1.13.0, dijit@Esri/dijit#v1.13.0/esri-3.23.0:
+dijit@1.13.0, "dijit@github:Esri/dijit#v1.13.0/esri-3.23.0":
   version "1.13.0"
   resolved "https://codeload.github.com/Esri/dijit/tar.gz/32737ca61c0844140fc27f5be1e968398790185a"
   dependencies:
@@ -2247,11 +2245,11 @@ dojo-webpack-plugin@^2.7.2:
     raw-loader "0.5.1"
     tmp "0.0.30"
 
-dojo@1.13.0, dojo@Esri/dojo#v1.13.0/esri-3.24.0, dojo@^1.9.0:
+dojo@1.13.0, dojo@^1.9.0, "dojo@github:Esri/dojo#v1.13.0/esri-3.24.0":
   version "1.13.0"
   resolved "https://codeload.github.com/Esri/dojo/tar.gz/3774881b7a71cfc8f4b406441050301c08020487"
 
-dojox@Esri/dojox#v1.13.0/esri-3.23.0:
+"dojox@github:Esri/dojox#v1.13.0/esri-3.23.0":
   version "1.13.0"
   resolved "https://codeload.github.com/Esri/dojox/tar.gz/4399bdc83503acdeac808ee9afd03a4a57d2d4c1"
   dependencies:
@@ -6473,13 +6471,6 @@ uglify-js@^2.6:
   optionalDependencies:
     uglify-to-browserify "~1.0.0"
 
-uglify-js@~3.3.25:
-  version "3.3.26"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.3.26.tgz#858b74e5e7262e876c834b907a5fa57d4fa0d525"
-  dependencies:
-    commander "~2.15.0"
-    source-map "~0.6.1"
-
 uglify-to-browserify@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/uglify-to-browserify/-/uglify-to-browserify-1.0.2.tgz#6e0924d6bda6b5afe349e39a6d632850a0f882b7"
@@ -6840,10 +6831,6 @@ webpack-dev-server@^3.1.4:
     webpack-dev-middleware "3.1.3"
     webpack-log "^1.1.2"
     yargs "11.0.0"
-
-webpack-hasjs-plugin@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/webpack-hasjs-plugin/-/webpack-hasjs-plugin-1.0.0.tgz#24b7cc3b45f174267ccd8f4e4597f6a2cc55173c"
 
 webpack-log@^1.0.1, webpack-log@^1.1.2:
   version "1.2.0"
