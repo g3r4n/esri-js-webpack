@@ -2,12 +2,13 @@
 
 ## Features
 
+* Arcgis JS API webpack plugin
 * React 16
 * Webpack 4
 * Babel
+* Prettier
 * Staging ES Next Features
 * Hot Module Replacement
-* Arcgis JS API webpack plugin
 
 ## Installation
 
@@ -15,16 +16,25 @@
 git clone git@github.com:g3r4n/esri-js-webpack.git
 cd esri-js-webpack
 npm install
-npm start
+npm run start
 ```
+
 visit `http://localhost:8080/`
 
 # build
+
 ```
-npm build
+npm run build
 ```
 
 # serve build
+
 ```
-npm serve
+npm run serve
+```
+
+# lint code using prettier
+
+```
+npm run lint
 ```
