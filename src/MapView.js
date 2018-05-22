@@ -1,5 +1,5 @@
-import EsriMapView from 'esri/views/MapView';
-import React, { Component } from 'react';
+import EsriMapView from "esri/views/MapView";
+import React, { Component } from "react";
 
 export default class MapView extends Component {
   componentDidMount() {
@@ -9,20 +9,20 @@ export default class MapView extends Component {
       zoom: 4,
       center: [134.866944, -24.994167],
       ui: {
-        components: [],
-      },
+        components: []
+      }
     });
-    view.watch('center', this._onCenterChange.bind(this));
+    view.watch("center", this._onCenterChange.bind(this));
   }
   _onCenterChange(center) {
-    if (typeof this.props.onCenterChange === 'function') {
+    if (typeof this.props.onCenterChange === "function") {
       this.props.onCenterChange(center.toJSON());
     }
   }
   render() {
     return (
       <div
-        style={{ height: '100%', width: '100%' }}
+        style={{ height: "100%", width: "100%" }}
         ref={mapViewDiv => {
           this.mapViewDiv = mapViewDiv;
         }}

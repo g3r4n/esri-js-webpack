@@ -5,18 +5,18 @@ import { hot } from "react-hot-loader";
 import "./App.css";
 
 const map = new EsriMap({
-  basemap: 'streets-vector',
+  basemap: "streets-vector"
 });
 
 class App extends Component {
-  constructor(){
-    super()
+  constructor() {
+    super();
     this.state = {
       center: {
         spatialReference: { latestWkid: 3857, wkid: 102100 },
         x: 15047024.975994881,
-        y: -2875028.188734928,
-      },
+        y: -2875028.188734928
+      }
     };
   }
   render() {
@@ -30,10 +30,10 @@ class App extends Component {
         />
         <div
           style={{
-            position: 'absolute',
+            position: "absolute",
             left: 0,
             top: 0,
-            backgroundColor: 'white',
+            backgroundColor: "white"
           }}
         >
           center :<br /> x={this.state.center.x} <br />y={this.state.center.y}

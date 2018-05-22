@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "build": "webpack --mode production",
-    "serve": "serve dist"
+    "serve": "serve dist",
+    "lint": "prettier --write \"src/**/*.{js,css,scss,less,json}\""
   },
   "keywords": [],
   "author": "Enguerrand des Vaux",
@@ -21,6 +22,7 @@
     "css-loader": "^0.28.11",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.0",
+    "prettier": "^1.12.1",
     "react-hot-loader": "^4.2.0",
     "serve": "^6.5.7",
     "webpack": "^4.8.3",
